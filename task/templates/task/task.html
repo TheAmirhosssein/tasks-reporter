@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="center">
+    <h1>todo</h1>
+    <div id="inputs">
+        <input type="text" placeholder="task">
+        <button type="button" onclick="addTask()">add</button>
+        <button type="button" onclick="clearAll()">clear all</button>
+    </div>
+</div>
+<hr>
+<div class="center">
+    <div>
+        <h1 class="mb-2">Tasks List</h2>
+    </div>
+    <table>
+        <thead>
+            <tr id="no-task">
+                <td>there is no task</td>
+            </tr> 
+        </thead>
+        <tbody>
+        </tbody>
+
+
+    </table>
+</div>
+{% endblock content %}
